@@ -33,10 +33,10 @@ function filterTable(){
     //listen for events to search through table based on date/time
     
     var dateValue = document.getElementById("datetime").value;
-    var cityValue = document.getElementById("city").value;
-    var stateValue = document.getElementById("state").value;
-    var countryValue = document.getElementById("county").value;
-    var shapeValue = document.getElementById("shape").value;
+    var cityValue = document.getElementById("city").value.toLowerCase();
+    var stateValue = document.getElementById("state").value.toLowerCase();
+    var countryValue = document.getElementById("county").value.toLowerCase();
+    var shapeValue = document.getElementById("shape").value.toLowerCase();
     var search = tableData;
 
 if (dateValue !== ""){
