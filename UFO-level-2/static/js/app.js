@@ -58,3 +58,8 @@ if (shapeValue !== ""){
     // var search = tableData.filter(tableData => tableData.datetime === inputValue);
     updateTable(search);
 }
+
+function clearFilter(){
+    // document.getElementById("filters").reset();
+    updateTable(tableData);
+}
